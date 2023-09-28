@@ -1,13 +1,12 @@
-import './App.css'
-import RegularForm from './components/RegularForm'
+import "./App.css";
+import ReactHookForms from "./components/reactHookForm";
 
 function App() {
-
   return (
     <>
-    <RegularForm />
+      <ReactHookForms />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

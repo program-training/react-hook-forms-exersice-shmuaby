@@ -1,16 +1,16 @@
-import  { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, FormEvent } from "react";
 
 interface FormData {
   username: string;
   email: string;
-  password:string;
+  password: string;
 }
 
 function RegularForm() {
   const [formData, setFormData] = useState<FormData>({
-    username: '',
-    email: '',
-    password: '',
+    username: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -28,13 +28,13 @@ function RegularForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-        <h1>Change Me To React Hook Form</h1>
+      <h1>Change Me To React Hook Form</h1>
       <div>
         <input
           type="text"
           id="username"
           name="username"
-          placeholder='Enter UserName'
+          placeholder="Enter UserName"
           value={formData.username}
           onChange={handleChange}
         />
@@ -44,7 +44,7 @@ function RegularForm() {
           type="text"
           id="email"
           name="email"
-          placeholder='Enter Email'
+          placeholder="Enter Email"
           value={formData.email}
           onChange={handleChange}
         />
@@ -54,7 +54,7 @@ function RegularForm() {
           type="text"
           id="password"
           name="password"
-          placeholder='Enter Password'
+          placeholder="Enter Password"
           value={formData.password}
           onChange={handleChange}
         />
